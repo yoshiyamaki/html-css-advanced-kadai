@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>要素サイズの比較</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 100vw; /* ビューポート幅を基準に */
+      height: 100vh; /* ビューポート高さを基準に */
+      margin: 0 auto;
+    }
+
+    #container {
+      width: 400px; /* 固定幅の親要素 */
+      height: 200px; /* 固定高さの親要素 */
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    .child-em {
+      width: 10em; /* 親のフォントサイズに基づく */
+      height: 5em;
+      background-color: lightcoral;
+    }
+
+    .child-rem {
+      width: 10rem; /* ルートフォントサイズに基づく */
+      height: 5rem;
+      background-color: lightblue;
+    }
+
+    .child-percent {
+      width: 50%; /* 親の幅の50% */
+      height: 50%; /* 親の高さの50% */
+      background-color: lightgreen;
+    }
+
+    .child-vw {
+      width: 10vw; /* ビューポート幅の10% */
+      height: 5vw; /* ビューポート幅の5% */
+      background-color: lightpink;
+    }
+
+    .child-vh {
+      width: 10vh; /* ビューポート高さの10% */
+      height: 5vh; /* ビューポート高さの5% */
+      background-color: lightgoldenrodyellow;
+    }
+
+    p {
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1>要素サイズの比較</h1>
+  <div id="container">
+    <div class="child-em">em: 幅10em, 高さ5em</div>
+    <div class="child-rem">rem: 幅10rem, 高さ5rem</div>
+    <div class="child-percent">％: 幅50％, 高さ50%</div>
+    <div class="child-vw">vw: 幅10vw, 高さ5vw</div>
+    <div class="child-vh">vh: 幅10vh, 高さ5vh</div>
+  
+  
+    <p>
+      body {
+        width: 100vw; /* ビューポート幅を基準に */
+        height: 100vh; /* ビューポート高さを基準に */そのため、ビューポートいっぱいになっています。
+      }<br>
+  
+      #container {
+        width: 400px; /* 固定幅の親要素 */
+        height: 200px; /* 固定高さの親要素 */
+        background-color: lightgray;
+        padding: 10px;これが親要素
+      }<br>
+  
+      .child-em {
+        width: 10em; /* 親のフォントサイズに基づく */16pxの10倍、160px
+        height: 5em;16pxの5倍、80px
+        background-color: lightcoral;
+      }<br>
+  
+      .child-rem {
+        width: 10rem; /* ルートフォントサイズに基づく */
+        height: 5rem;
+        background-color: lightblue;
+      }<br>
+  
+      .child-percent {
+        width: 50%; /* 親の幅の50% */
+        height: 50%; /* 親の高さの50% */
+        background-color: lightgreen;
+      }<br>
+  
+      .child-vw {
+        width: 10vw; /* ビューポート幅の10% */
+        height: 5vw; /* ビューポート幅の5% */
+        background-color: lightpink;
+      }<br>
+  
+      .child-vh {
+        width: 10vh; /* ビューポート高さの10% */
+        height: 5vh; /* ビューポート高さの5% */
+        background-color: lightgoldenrodyellow;
+      } 
+    </p>
+  </div>
+</body>
+</html>

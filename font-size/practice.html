@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>5章課題</title>
+  <meta name="description" content="このページは5章の課題です。">
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-size: 16px; /* 基準となるフォントサイズ */
+    }
+
+    #parent {
+      font-size: 20px; /* 親のフォントサイズを20pxに設定 */
+    }
+
+    #child-em {
+      font-size: 1.5em; /* 親のフォントサイズの1.5倍 */
+    }
+
+    #child-rem {
+      font-size: 1.5rem; /* HTMLのルートフォントサイズの1.5倍 */
+    }
+
+    #child-percent {
+      font-size: 150%; /* 親のフォントサイズの150% */
+    }
+
+    #child-vw {
+      font-size: 2vw; /* ビューポート幅の2％に基づいている */
+    }
+
+    #child-vh {
+      font-size: 2vh; /* ビューポート高さの2％に基づいている */
+    }
+
+    #child-em, #child-percent, #child-vh {
+      color: orange;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>フォントサイズの比較</h1>
+  <div id="parent">
+    <p>親要素: フォントサイズ20pxは #parent {
+      font-size: 20px; /* 親のフォントサイズを20pxに設定 */
+    }</p>
+    <p id="child-em">子要素 (em): 親（20px）の1.5倍の30pxにしたい場合、font-size: 1.5em</p>
+    <p id="child-rem">子要素 (rem): ルート（16px）の1.5倍の24pxにしたい場合、font-size: 1.5rem</p>
+    <p id="child-percent">子要素 (%): 親（20px）の150%の30pxにしたい場合、font-size: 150%</p>
+    <p id="child-vw">子要素 (vw): ビューポート幅（1029px）の2% 20.58pxにしたい場合、font-size: 2vw</p>
+    <p id="child-vh">子要素 (vh): ビューポート高さ（678ppx）の2% 13.56pxにしたい場合、font-size: 2vh</p>
+  </div>
+  <p>body {
+    font-size: 16px; /* 基準となるフォントサイズ */
+  }<br>
+
+  #parent {
+    font-size: 20px; /* 親のフォントサイズを20pxに設定 */
+  }<br>
+
+  #child-em {
+    font-size: 1.5em; /* 親のフォントサイズの1.5倍 */
+  }<br>
+
+  #child-rem {
+    font-size: 1.5rem; /* HTMLのルートフォントサイズの1.5倍 */
+  }<br>
+
+  #child-percent {
+    font-size: 150%; /* 親のフォントサイズの150% */
+  }<br>
+
+  #child-vw {
+    font-size: 2vw; /* ビューポート幅（1029px）の2％に基づいている */
+  }<br>
+
+  #child-vh {
+    font-size: 2vh; /* ビューポート高さの2％（678px）に基づいている */
+  }</p>
+</body>
+</html>
